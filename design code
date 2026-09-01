@@ -1,0 +1,10 @@
+module counter_debug ( input clk, reset , enable , output reg [3:0]count);
+always @( posedge clk) begin
+  if ( reset)
+  count <= 4'b0000;
+  else if ( enable == 0) 
+  count <= count ;
+  else 
+  count <= count + 1;
+  end
+  endmodule
