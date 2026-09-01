@@ -2,7 +2,7 @@ module test;
 reg clk, reset, enable ;
 wire [3:0]count;
 
-counter_debug dut ( .clk(clk), .reset(reset), . enable(enable), .count(count));
+counter_debug dut ( .clk(clk), .reset(reset), .enable(enable), .count(count));
 
 always
 #5 clk = ~ clk;
